@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Motivo.js v1.1 Demo</title>
+
+<style>
+body{
+  background-color: blue;
+  font-family: Arial;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1{
+  color: red;
+}
+
+button{
+  background-color: red;
+  color: white;
+  border-radius: 19px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Motivo.js v1.1</h1>
+<h2>Libreria motivazionale</h2>
+
+<button onclick="Motivo.mostra('msg','ora')">
+  Mostra messaggio
+</button>
+
+<p id="msg"></p>
+<p id="ora"></p>
+
+<script src="motivo 1.1.js"></script>
+<script>
+  Motivo.avviaOrologio("ora");
+</script>
+
+</body>
+</html>
