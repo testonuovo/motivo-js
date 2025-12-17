@@ -2,48 +2,50 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Motivo.js v1.1 Demo</title>
-
+<title>Motivo.js Demo</title>
 <style>
-body{
-  background-color: blue;
-  font-family: Arial;
-  text-align: center;
-  padding-top: 50px;
-}
-
-h1{
-  color: red;
-}
-
-button{
-  background-color: red;
-  color: white;
-  border-radius: 19px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
+  body {
+    font-family: Arial;
+    background: #1e90ff;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+  }
+  h1 { color: red; }
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    background: yellow;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+  button:hover { transform: scale(1.1); }
+  #msg, #ora {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: yellow;
+  }
 </style>
-
 </head>
 <body>
 
-<h1>Motivo.js v1.1</h1>
-<h2>Libreria motivazionale</h2>
+<h1>Motivo.js v1.1 Demo</h1>
+<p>Libreria motivazionale online</p>
 
-<button onclick="Motivo.mostra('msg','ora')">
-  Mostra messaggio
-</button>
+<button onclick="Motivo.mostra('msg','ora')">Mostra messaggio</button>
 
 <p id="msg"></p>
-<p id="ora"></p>
+<p>Ora: <span id="ora"></span></p>
 
-<script src="motivo1.1.js"></script>
+<!-- Collegamento alla libreria -->
+<script src="motivo%201.1.js"></script>
 <script>
+  // Avvia l'orologio all'apertura della pagina
   Motivo.avviaOrologio("ora");
 </script>
 
 </body>
 </html>
-
